@@ -1,0 +1,27 @@
+{
+   "environment": {
+    "qx.icontheme": "Tango"
+   },
+	"applications": [
+		{
+			"class": "qx.contrib.logpane.Application",
+			"theme": "qx.theme.Modern",
+			"name": "logview",
+			"title": "Qooxdoo Log View"
+		}
+	],
+	/** Targets */
+	"targets": [
+		{
+			"type": "source",
+			"outputPath": "source-output"
+		}
+	],
+	"defaultTarget": "source",
+	"locales": [
+		"en", "de", "ro", "sv"
+	],
+	"serve": {
+	   "listenPort": 8080
+	}
+}
