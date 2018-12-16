@@ -26,7 +26,7 @@ qx.Class.define("qxl.logpane.Application",
     {
       this.base(arguments);
 
-      var view = new qxl.logpane.LogView();
+      var view = new qxl.logpane.LogPane();
       this.getRoot().add(view, {edge: 0});
       view.fetch();
 
