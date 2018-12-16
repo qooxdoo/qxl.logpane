@@ -29,7 +29,7 @@
  * @asset(qx/icon/Tango/16/status/dialog-error.png)
  */
 
-qx.Class.define("qx.contrib.logpane.LogView", {
+qx.Class.define("qxl.logpane.LogView", {
   extend : qx.ui.container.Composite,
 
 

@@ -7,7 +7,7 @@
       "API",
       "class browser"
     ],
-    "homepage": "https://github.com/qooxdoo/qx-contrib-logpane",
+    "homepage": "https://github.com/qooxdoo/logpane",
     "license": "MIT",
     "authors": [
       {
@@ -23,7 +23,7 @@
     "qooxdoo-range": "^6.0.0-alpha"
   },
   "provides": {
-    "namespace": "qx.contrib.logpane",
+    "namespace": "qxl.logpane",
     "encoding": "utf-8",
     "class": "source/class",
     "resource": "source/resource",

@@ -4,7 +4,7 @@
    },
 	"applications": [
 		{
-			"class": "qx.contrib.logpane.Application",
+			"class": "qxl.logpane.Application",
 			"theme": "qx.theme.Modern",
 			"name": "logview",
 			"title": "Qooxdoo Log View"
