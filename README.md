@@ -7,7 +7,7 @@ shows the qooxdoo log in a panel
 
 ```
 $ qx contrib update
-$ qx contrib install qooxdoo/qx-contrib-logpane
+$ qx contrib install qooxdoo/logpane
 $ qx serve 
 ```
 
