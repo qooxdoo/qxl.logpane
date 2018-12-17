@@ -7,12 +7,12 @@ shows the qooxdoo log in a panel
 
 ```
 $ qx contrib update
-$ qx contrib install qooxdoo/logpane
+$ qx contrib install qooxdoo/qxl.logpane
 $ qx serve 
 ```
 
 ```
-  var view = new qx.contrib.LogView();
+  var view = new qxl.logpane.LogPane();
   this.getRoot().add(view, {edge: 0});
   view.fetch();
 ```
