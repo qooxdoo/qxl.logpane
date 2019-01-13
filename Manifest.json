@@ -19,7 +19,7 @@
         "email": "Henner DOT Kollmann AT gmx DOT de"
       }
     ],
-    "version": "0.1.3"
+    "version": "0.1.4"
   },
   "provides": {
     "namespace": "qxl.logpane",
@@ -30,6 +30,6 @@
     "type": "library"
   },
   "requires": {
-      "qooxdoo-sdk": "^6.0.0-alpha"
+    "qooxdoo-sdk": "^6.0.0-alpha"
   }
 }
