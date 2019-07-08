@@ -103,11 +103,12 @@ qx.Class.define("qxl.logpane.LogPane", {
 
 
   properties : {
+    /** Shows the toolbar */
     /** Shows the log level button */
-    showLogLevel : {
+    showToolBar : {
       check : "Boolean",
-      apply : "_applyShowLogLevel",
-      init : false
+      apply : "_applyShowToolBar",
+      init : true
     },
 
     /** Current set log level.*/
@@ -163,6 +164,13 @@ qx.Class.define("qxl.logpane.LogPane", {
       return this.__logElem;
     },
 
+    _applyShowToolBar : function(value, old) {
+      if (value) {
+        this.__toolbar.show();
+      } else {
+        this.__toolbar.exclude();
+      }
+    },
 
     // property apply
     _applyShowLogLevel : function(value, old) {
