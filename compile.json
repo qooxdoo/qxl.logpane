@@ -1,17 +1,32 @@
 {
-   "$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/resource/schema/v1/compile.json",
-   "environment": {
-    "qx.icontheme": "Tango"
-   },
+	"$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/resource/schema/v1/compile.json",
+	"environment": {
+		"qx.icontheme": "Tango"
+	},
 	"applications": [
 		{
 			"class": "qxl.logpane.Application",
 			"theme": "qx.theme.Modern",
 			"name": "logview",
-			"title": "Qooxdoo Log View"
+			"title": "LogPane",
+			"default": true
+		},
+		{
+			"class": "qxl.apiviewer.Application",
+			"theme": "qxl.apiviewer.Theme",
+			"name": "apiviewer",
+			"title": "LogPane API",
+			"environment": {
+				"qx.icontheme": "Tango",
+				"excludeFromAPIViewer": [
+					"qxl.apiviewer.*",
+					"qxl.versionlabel.*",
+					"qx.*",
+					"qxWeb"
+				]
+			}
 		}
-	],
-	/** Targets */
+	],    
 	"targets": [
 		{
 			"type": "source",
@@ -24,9 +39,12 @@
 	],
 	"defaultTarget": "source",
 	"locales": [
-		"en", "de", "ro", "sv"
+		"en",
+		"de",
+		"ro",
+		"sv"
 	],
 	"serve": {
-	   "listenPort": 8080
+		"listenPort": 8080
 	}
-}
+}                                                                                     
