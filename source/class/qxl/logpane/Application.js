@@ -22,8 +22,7 @@ qx.Class.define("qxl.logpane.Application",
 
   members :
   {
-    main : function()
-    {
+    main : function() {
       this.base(arguments);
 
       var view = new qxl.logpane.LogPane();

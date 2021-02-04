@@ -33,8 +33,7 @@ qx.Class.define("qxl.logpane.LogPane", {
   extend : qx.ui.container.Composite,
 
 
-  construct : function()
-  {
+  construct : function() {
     this.__logLevelData = [
       ["debug", "Debug", "icon/16/categories/system.png"],
       ["info", "Info", "icon/16/status/dialog-information.png"],
@@ -71,7 +70,7 @@ qx.Class.define("qxl.logpane.LogPane", {
     this.add(this.__toolbar);
 
     // log pane
-    var logArea = new qx.ui.embed.Html('');
+    var logArea = new qx.ui.embed.Html("");
     logArea.set(
     {
       backgroundColor : "white",
@@ -140,11 +139,9 @@ qx.Class.define("qxl.logpane.LogPane", {
     /**
      * Fetches all logged data from the qx logging system and puts in into the
      * log widget.
-     *
-     * @param Class {Logger?null} The logger class.
+     * @param Logger {Class?null} The logger class.
      */
-    fetch : function(Logger)
-    {
+    fetch : function(Logger) {
       if (!Logger) {
         Logger = qx.log.Logger;
       }
@@ -191,13 +188,12 @@ qx.Class.define("qxl.logpane.LogPane", {
      *
      * @return {qx.ui.toolbar.MenuButton}
      */
-    __createLogLevelMenu : function()
-    {
+    __createLogLevelMenu : function() {
       var logLevelMenu = new qx.ui.menu.Menu();
       var logLevelMenuButton = new qx.ui.toolbar.MenuButton("Log Level", "icon/16/categories/system.png");
       logLevelMenuButton.setMenu(logLevelMenu);
 
-      for (var i = 0,l = this.__logLevelData.length; i < l; i++) {
+      for (var i = 0, l = this.__logLevelData.length; i < l; i++) {
         var data = this.__logLevelData[i];
         var button = new qx.ui.menu.Button(data[1], data[2]);
         button.setUserData("model", data[0]);
@@ -221,8 +217,7 @@ qx.Class.define("qxl.logpane.LogPane", {
    *****************************************************************************
    */
 
-  destruct : function()
-  {
+  destruct : function() {
     this._disposeObjects("__logAppender");
     this.__logElem = null;
   }
