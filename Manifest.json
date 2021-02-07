@@ -20,7 +20,7 @@
         "email": "Henner DOT Kollmann AT gmx DOT de"
       }
     ],
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   "provides": {
     "namespace": "qxl.logpane",
