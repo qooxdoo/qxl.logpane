@@ -16,23 +16,21 @@
 
 ************************************************************************ */
 
-qx.Class.define("qxl.logpane.Application",
-{
-  extend : qx.application.Standalone,
+qx.Class.define("qxl.logpane.Application", {
+  extend: qx.application.Standalone,
 
-  members :
-  {
-    main : function() {
-      this.base(arguments);
+  members: {
+    main() {
+      super.main();
 
       var view = new qxl.logpane.LogPane();
-      this.getRoot().add(view, {edge: 0});
+      this.getRoot().add(view, { edge: 0 });
       view.fetch();
 
-      window.setInterval(function() {
+      window.setInterval(function () {
         qx.log.Logger.debug(new Date() + " printing new log message.");
         view.fetch();
       }, 1000);
-    }
-  }
+    },
+  },
 });
