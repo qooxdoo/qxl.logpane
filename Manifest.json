@@ -5,10 +5,11 @@
     "summary": "Common used log pannel.",
     "description": "This is a view for the qooxdoo log.",
     "keywords": [
-      "API",
-      "class browser"
+      "log",
+      "logging",
+      "console"
     ],
-    "homepage": "https://github.com/qooxdoo/logpane",
+    "homepage": "https://github.com/qooxdoo/qxl.logpane",
     "license": "MIT",
     "authors": [
       {
